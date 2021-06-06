@@ -26,6 +26,11 @@
 .display-box {
     background-color: #101D42;
     margin: 2em 0;
-    height: 400px;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.display-text {
+    font-size: 1.5em;
 }

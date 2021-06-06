@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './Widget.css';
+import ReactJson from 'react-json-view'
 
 const Widget = () => {
     const [inputVal, setInputVal] = useState('characters/random');
@@ -12,6 +13,23 @@ const Widget = () => {
         .then(res => setRequest(res.data))
     }
 
+    const preStyle =  {
+        display: 'block',
+        padding: '10px 30px',
+        whiteSpace: 'pre-wrap'
+    }
+
+    const defaultObj =
+    {
+        _id: "60b44a8d4e2aec2c2cb664bb",
+        firstname: "Mark",
+        lastname: "Grayson",
+        image: "https://invincible-api.s3.amazonaws.com/Invincible.jpg",
+        alias: "Invincible",
+        actor: "Steven Yeun"
+    }
+    
+
     return (
         <div className="widget">
             <p>The Invincible API is a free JSON API for characters, and episodes from Amazon’s show Invincible.</p>
@@ -22,7 +40,9 @@ const Widget = () => {
                 <button onClick={handleRequest}>Get</button>
             </form>
             <div className="display-box">
-                {JSON.stringify(request)}
+                <pre className="display-text" style={preStyle}>
+                  {request ? JSON.stringify(request, null, 5) : JSON.stringify(defaultObj, null, 5)}  
+                </pre>
             </div>
         </div>
     )
