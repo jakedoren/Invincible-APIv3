@@ -41,7 +41,7 @@ const Documentation = () => {
 
     return (
         <div className="documentation">
-            <h1>Documentation</h1>
+            <h2>Documentation</h2>
             <p>Welcome to the Invincible API! The documentation below will help you get up to speed 
             and get you familiar with the functionality,    
             allowing you to start using this API for your own projects</p>
