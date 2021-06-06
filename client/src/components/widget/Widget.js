@@ -35,7 +35,7 @@ const Widget = () => {
             <h2>Try A Request</h2>
             <form className="request">
                 <div className="brick">
-                    https://invincible-api.herokuapp.com/
+                    https://invincible-api.herokuapp.com/api/
                 </div>
                 <input type="text" value={inputVal} placeholder="characters/random" onChange={(e) => setInputVal(e.target.value)} />
                 <button onClick={handleRequest} className="btn">Get</button>

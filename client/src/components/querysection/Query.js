@@ -47,7 +47,7 @@ const Query = () => {
             You have the ability to query through characters by firstname, lastname, alias or by the actor that voices them.</p>
             <h2>Example request</h2>
             <div className="brick" >
-                http://localhost:8080/api/characters/search/:grayson
+                https://invincible-api.herokuapp.com/api/characters/search/:grayson
             </div>
             <p>This should output back to you every character object that contains grayson in either it’s firstname,  
             lastname or alias field. This should look like what’s described below. </p>
@@ -62,7 +62,7 @@ const Query = () => {
                 finding all objects with Grayson for the last name and then searching and finding the object that also has a firstname of Debbie
             </p>
             <div className="brick">
-                http://localhost:8080/characters?lastname=Grayson&firstname=Debbie
+                https://invincible-api.herokuapp.com/api/characters?lastname=Grayson&firstname=Debbie
             </div>
             <p>This request would return something like this</p>
             <div className="display-box">
