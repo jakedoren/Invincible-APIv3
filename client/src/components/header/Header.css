@@ -1,0 +1,9 @@
+.heading {
+    width: 50%;
+    height: 10%;
+    margin: 2em auto;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }

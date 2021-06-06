@@ -1,0 +1,31 @@
+.widget {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+.request input {
+    flex: 2;
+}
+
+.request button {
+    width: 7%;
+    cursor: pointer;
+}
+
+.brick {
+    background-color: #101D42;
+    flex: 3;
+    color: #fff;
+    padding: 10px;
+}
+
+.request {
+    display: flex;
+}
+
+.display-box {
+    background-color: #101D42;
+    margin: 2em 0;
+    height: 400px;
+    color: #fff;
+}

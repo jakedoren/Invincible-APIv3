@@ -1,24 +1,24 @@
 // client/src/App.js
 
 import React from "react";
-import logo from "./logo.svg";
 import axios from 'axios'
+import Heading from './components/header/Header'
 import "./App.css";
+import Header from "./components/header/Header";
+import Widget from "./components/widget/Widget";
 
 function App() {
   const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    axios.get("/api/characters")
-      .then((data) => setData(data.data[10].firstname));
-  }, []);
+  // React.useEffect(() => {
+  //   axios.get("/api/characters")
+  //     .then((data) => console.log(data));
+  // }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
+      <Header />
+      <Widget />
     </div>
   );
 }
