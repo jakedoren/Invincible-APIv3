@@ -2,3 +2,24 @@
     margin: 0 auto;
     width: 50%;
 }
+
+.brick {
+    background-color: #101D42;
+    flex: 3;
+    color: #fff;
+    padding: 10px;
+}
+
+.display-box {
+    background-color: #101D42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.display-text {
+    font-size: 1.5em;
+    display: block;
+    padding: 10px 30px;
+    white-space: pre-wrap;
+}
