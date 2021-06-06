@@ -48,6 +48,7 @@ const Widget = () => {
                   {request ? JSON.stringify(request, null, 5) : JSON.stringify(defaultObj, null, 5)}  
                 </pre>
             </div>
+            <p>* Max of three shown</p>
         </div>
     )
 };

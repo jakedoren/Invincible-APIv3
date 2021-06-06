@@ -3,11 +3,22 @@
     width: 50%;
 }
 
+.documentation h1 {
+    margin-top: 0;
+}
+
 .brick {
     background-color: #101D42;
     flex: 3;
     color: #fff;
     padding: 10px;
+}
+
+.display-text {
+    font-size: 1.5em;
+    display: block;
+    padding: 10px 30px;
+    white-space: pre-wrap;
 }
 
 .display-box {
