@@ -35,3 +35,43 @@ h2 {
 p {
   color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  /* p {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 3.7em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  } */
+
+  div {
+    font-size: 1em;
+  }
+
+  
+}
+@media screen and (max-width: 420px) {
+
+  div {
+    font-size: 10px;
+  }
+
+}
+@media screen and (max-width: 340px) {
+
+  div {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (max-width: 276px) {
+  div {
+    font-size: 7px;
+  }
+}

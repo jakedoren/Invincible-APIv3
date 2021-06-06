@@ -34,9 +34,11 @@ const Widget = () => {
             <p>The Invincible API is a free JSON API for characters, and episodes from Amazon’s show Invincible.</p>
             <h2>Try A Request</h2>
             <form className="request">
-                <div className="brick">https://invincible-api.herokuapp.com/</div>
+                <div className="brick">
+                    https://invincible-api.herokuapp.com/
+                </div>
                 <input type="text" value={inputVal} placeholder="characters/random" onChange={(e) => setInputVal(e.target.value)} />
-                <button onClick={handleRequest}>Get</button>
+                <button onClick={handleRequest} className="btn">Get</button>
             </form>
             <div className="try-block">
                 <p onClick={handleStrongRequest} >Try <strong>/characters</strong></p>

@@ -23,3 +23,20 @@
     padding: 10px 30px;
     white-space: pre-wrap;
 }
+
+@media screen and (max-width: 970px) {
+    .query {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .query {
+        width: 95%;
+    }
+
+    .display-text {
+        font-size: 1.2em;
+    }
+}
+

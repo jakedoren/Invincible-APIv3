@@ -45,3 +45,63 @@
     padding-right: 1.5em;
     cursor: pointer;
 }
+
+@media screen and (max-width: 970px) {
+    .widget {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .widget {
+        width: 95%;
+    }
+
+    .display-text {
+        font-size: 1em;
+    }
+
+    .request input, .request button {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .widget {
+        width: 95%;
+    }
+
+    .display-text {
+        font-size: 1em;
+    }
+
+    .brick {
+        flex: 3;
+    }
+
+    .request input {
+        flex: 1;
+    }
+
+    .request button {
+        width: 15%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .request input, .request button {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    .request input, .request button {
+        font-size: 8px;
+    }
+}
+
+
