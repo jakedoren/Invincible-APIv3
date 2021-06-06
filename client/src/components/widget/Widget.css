@@ -25,7 +25,6 @@
 
 .display-box {
     background-color: #101D42;
-    margin: 2em 0;
     color: #fff;
     display: flex;
     align-items: center;
@@ -33,4 +32,16 @@
 
 .display-text {
     font-size: 1.5em;
+    display: block;
+    padding: 10px 30px;
+    white-space: pre-wrap;
+}
+
+.try-block {
+    display: flex;
+}
+
+.try-block p {
+    padding-right: 1.5em;
+    cursor: pointer;
 }

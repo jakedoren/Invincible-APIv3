@@ -6,6 +6,7 @@ import Heading from './components/header/Header'
 import "./App.css";
 import Header from "./components/header/Header";
 import Widget from "./components/widget/Widget";
+import Documentation from "./components/documentation/Documentation";
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <Widget />
+      <Documentation />
     </div>
   );
 }

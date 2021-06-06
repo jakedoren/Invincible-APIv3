@@ -1,0 +1,18 @@
+.documentation {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.brick {
+    background-color: #101D42;
+    flex: 3;
+    color: #fff;
+    padding: 10px;
+}
+
+.display-box {
+    background-color: #101D42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}

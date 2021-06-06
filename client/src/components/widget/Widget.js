@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './Widget.css';
-import ReactJson from 'react-json-view'
 
 const Widget = () => {
     const [inputVal, setInputVal] = useState('characters/random');
@@ -13,12 +12,6 @@ const Widget = () => {
         .then(res => setRequest(res.data))
     }
 
-    const preStyle =  {
-        display: 'block',
-        padding: '10px 30px',
-        whiteSpace: 'pre-wrap'
-    }
-
     const defaultObj =
     {
         _id: "60b44a8d4e2aec2c2cb664bb",
@@ -28,8 +21,14 @@ const Widget = () => {
         alias: "Invincible",
         actor: "Steven Yeun"
     }
-    
 
+    const handleStrongRequest = (e) => {
+        const requestedURL = e.target.innerHTML
+
+        axios.get(`/api/${requestedURL}`)
+        .then(res => setRequest(res.data))
+    }
+    
     return (
         <div className="widget">
             <p>The Invincible API is a free JSON API for characters, and episodes from Amazon’s show Invincible.</p>
@@ -39,8 +38,13 @@ const Widget = () => {
                 <input type="text" value={inputVal} placeholder="characters/random" onChange={(e) => setInputVal(e.target.value)} />
                 <button onClick={handleRequest}>Get</button>
             </form>
+            <div className="try-block">
+                <p onClick={handleStrongRequest} >Try <strong>/characters</strong></p>
+                <p onClick={handleStrongRequest} >Try <strong>/episodes</strong></p>
+                <p onClick={handleStrongRequest} >Try <strong>/quotes</strong></p>
+            </div>
             <div className="display-box">
-                <pre className="display-text" style={preStyle}>
+                <pre className="display-text" >
                   {request ? JSON.stringify(request, null, 5) : JSON.stringify(defaultObj, null, 5)}  
                 </pre>
             </div>
