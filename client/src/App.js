@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Widget from "./components/widget/Widget";
 import Documentation from "./components/documentation/Documentation";
 import Query from './components/querysection/Query'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -21,6 +22,7 @@ function App() {
       <Widget />
       <Documentation />
       <Query />
+      <Footer />
     </div>
   );
 }
