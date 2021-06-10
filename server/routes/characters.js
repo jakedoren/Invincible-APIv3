@@ -4,7 +4,12 @@ const Character = require('../models/Character')
 
 // Get all Characters
 router.get('/', (req, res) => {
+
     let query = {};
+
+    const limit = parseInt(req.query.limit);
+
+    const page = parseInt(req.query.page);
 
     if (req.query.firstname) {
         query.firstname = req.query.firstname;
@@ -22,19 +27,21 @@ router.get('/', (req, res) => {
         query.actor = req.query.actor
     }
 
-    if(Object.keys(req.query).length && !req.query.firstname && !req.query.lastname && !req.query.alias && !req.query.actor) {
+    if(Object.keys(req.query).length && !req.query.firstname && !req.query.lastname && !req.query.alias && !req.query.actor && !req.query.limit) {
         return res.status(400).send({message: "Bad request"})
     }
-    
-    Character.find(query, (err, foundCharacter) => {
+
+       Character.find(query, (err, foundCharacter) => {
         if(!err && foundCharacter) {
             res.send(foundCharacter)
         } else if(err) {
+            console.log(err)
             res.status(500).send({message: "Internal server error"})
         } else {
             res.send({message: "Character not found"})
         }
-    })
+    }).limit(limit).skip(limit * page)
+    
 })
 
 // Get a random Character
