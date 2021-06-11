@@ -10,6 +10,17 @@
 .request button {
     width: 7%;
     cursor: pointer;
+    color: #fff;
+    background-color: #101D42;
+    border: 0;
+    font-weight: 700;
+    /* font-family: 'LenorahJNL'; */
+    /* height: 100%; */
+}
+
+.request button:hover {
+    background-color: #233e88;
+    transition: background-color ease 0.2s;
 }
 
 .brick {
