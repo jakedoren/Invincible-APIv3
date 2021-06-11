@@ -109,7 +109,7 @@ const Query = () => {
                 </pre>
             </div>
             <h2>Pagination</h2>
-            <p>The Invincible API has built in pagination. In order to paginate we allow you to query by page and limit. If you were to input page 2 + a limit of 5 you would be the second page of the array containing 5 characters per page.</p>
+            <p>The Invincible API has built in pagination. In order to paginate we allow you to query by page and limit. When using the page query parameter page starts at 1. If you were to input page 2 + a limit of 5 you would be ouput the second page of the array containing 5 characters per page.</p>
             <div className="brick">
                 https://invincible-api.herokuapp.com/api/characters?page=2&limit=5
             </div>
