@@ -8,7 +8,7 @@ const Widget = () => {
 
     const handleRequest = (e) => {
         e.preventDefault();
-        axios.get(`/api/${inputVal}`)
+        axios.get(`/api/${inputVal}?limit=3`)
         .then(res => setRequest(res.data))
     }
 
