@@ -25,7 +25,7 @@ const Widget = () => {
     const handleStrongRequest = (e) => {
         const requestedURL = e.target.innerHTML
 
-        axios.get(`/api/${requestedURL}`)
+        axios.get(`/api/${requestedURL}?limit=3`)
         .then(res => setRequest(res.data))
     }
     
