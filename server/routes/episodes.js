@@ -4,13 +4,17 @@ const Episode = require('../models/Episode')
 
 router.get('/', (req, res) => {
 
+    const limit = parseInt(req.query.limit);
+
+    const page = parseInt(req.query.page);
+
     Episode.find({}, (err, foundEpisodes) => {
         if(!err) {
             res.send(foundEpisodes)
         } else {
             res.send(err)
         }
-    })
+    }).limit(limit).skip(limit * page)
 })
 
 // Get random episode
