@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 
     const limit = parseInt(req.query.limit);
 
-    const page = parseInt(req.query.page);
+    const page = parseInt(req.query.page - 1);
 
     Episode.find({}, (err, foundEpisodes) => {
         if(!err) {

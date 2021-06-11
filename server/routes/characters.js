@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 
     const limit = parseInt(req.query.limit);
 
-    const page = parseInt(req.query.page);
+    const page = parseInt(req.query.page - 1);
 
     if (req.query.firstname) {
         query.firstname = req.query.firstname;
