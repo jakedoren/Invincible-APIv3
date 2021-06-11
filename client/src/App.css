@@ -1,9 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/6ccd50f2fa41fab271e51a0b49a264ef?family=LenorahJNL);
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'LenorahJNL';
+  src: url(./assets/LenorahJNL.ttf);
+}
 
 body {
   background-color: #2c2c2c;
