@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <p>Invincible API {currentYear} </p>
+            <p><span>Invincible API</span> {currentYear} </p>
         </div>
     )
 }

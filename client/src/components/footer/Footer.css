@@ -4,9 +4,15 @@
     margin: 2em auto;
     background-color: #1f1f1f;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 5px;
     text-align: center;
+    font-family: 'LenorahJNL';
+}
+
+.footer span {
+    color: #f9f608;
 }
 
 @media screen and (max-width: 970px) {
