@@ -97,12 +97,12 @@ const Query = () => {
             <h2>Query Parameters</h2>
             <p>The API allows for use of query parameters to query through  characters and episodes with precision. For example, 
                 the request below would query all objects by lastname, 
-                finding all objects with Grayson for the last name and then searching and finding the object that also has a firstname of Debbie
+                finding all objects with Grayson for the last name and then searching and finding the object that also has a firstname of Debbie.
             </p>
             <div className="brick">
                 https://invincible-api.herokuapp.com/api/characters?lastname=Grayson&firstname=Debbie
             </div>
-            <p>This request would return something like this</p>
+            <p>This request would return something like this.</p>
             <div className="display-box">
                 <pre className="display-text" >
                     {JSON.stringify(queriedArray, null, 5)}

@@ -44,9 +44,9 @@ const Documentation = () => {
             <h2>Documentation</h2>
             <p>Welcome to the Invincible API! The documentation below will help you get up to speed 
             and get you familiar with the functionality,    
-            allowing you to start using this API for your own projects</p>
+            allowing you to start using this API for your own projects.</p>
             <h2>Get all</h2>
-            <p>To recieve an array of all Invincible characters , start my making a GET request to the endpoint listed below </p>
+            <p>To recieve an array of all Invincible characters , start my making a GET request to the endpoint listed below. </p>
             <div className="brick">
                 https://invincible-api.herokuapp.com/api/characters
             </div>
@@ -58,6 +58,10 @@ const Documentation = () => {
             </div>
             <p>* Max of three shown</p>
             <h2>Get one</h2>
+            <div className="brick">
+                https://invincible-api.herokuapp.com/api/characters/60b44a8d4e2aec2c2cb664b6
+            </div>
+            <p>We allow you to get just one character by utilizing the objects ID. Example below.</p>
             <div className="display-box">
                 <pre className="display-text">
                     {JSON.stringify(getOneDefault, null, 5)}
