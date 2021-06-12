@@ -43,7 +43,6 @@ const Widget = () => {
             <div className="try-block">
                 <p onClick={handleStrongRequest} >Try <strong>/characters</strong></p>
                 <p onClick={handleStrongRequest} >Try <strong>/episodes</strong></p>
-                <p onClick={handleStrongRequest} >Try <strong>/quotes</strong></p>
             </div>
             <div className="display-box">
                 <pre className="display-text" >
